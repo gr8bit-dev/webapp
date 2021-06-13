@@ -5,7 +5,7 @@ const cors = require('cors');
 const path = require('path');
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT;
 
 if (process.env.NODE_ENV === 'dev') {
     // Allow development server access to resources
