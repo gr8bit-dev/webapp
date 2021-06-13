@@ -5,7 +5,9 @@ function UserMessage() {
 
     const getUser = async () => {
         const res = await fetch('http://localhost:8080/user');
+        console.log(res);
         const json = await res.json();
+        console.log(json);
 
         setUser(json.user);
     };
